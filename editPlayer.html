@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="global.css">
+    <title>Editar Jogador</title>
+</head>
+<body>
+<form action="app.php" method="POST">
+    <input type="hidden" name="action" value="update">
+    <input type="hidden" name="id" value="{{id}}">
+    <label>Nome:</label>
+    <input type="text" name="name" value="{{name}}">
+    <br>
+    <label>Username:</label>
+    <input type="text" name="userName" value="{{userName}}">
+    <br>
+    <label>Email:</label>
+    <input type="email" name="email" value="{{email}}">
+    <br>
+    <label>Senha:</label>
+    <input type="password" name="password" value="{{password}}">
+    <input type="hidden" name="dateRegister" value="{{dateRegister}}">
+    <br>
+    <button type="submit" name="action" value="update">Atualizar Jogador</button>
+    <a href="register.html">Cancelar</a>
+</form>
+
+</body>
+</html>

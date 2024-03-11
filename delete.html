@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"  content="width=device-width, initial-sacele=1.0">
+    <link rel="stylesheet" href="global.css">
+    <title>Editar Jogador</title>
+</head>
+<body>
+<form action="app.php" method="POST">
+    <input type="hidden" name="action" value="update" >
+    <input type="hidden" name="id" value="{{id}}" readonly>
+    <label>Nome:</label>
+    <input type="text" name="name" value="{{name}}" readonly>
+    <br>
+    <label>UserName:</label>
+    <input type="text" name="userName" value="{{userName}}" readonly>
+    <br>
+    <label>Email:</label>
+    <input type="text" name="email" value="{{email}}" readonly>
+    <br>
+    <label>Password:</label>
+    <input type="text" name="password" value="{{password}}" readonly>
+    <br>
+    <label>Data de Registro:</label>
+    <input type="text" name="dateRegister" value="{{dateRegister}}" readonly>
+    <br>
+    <button type="submit" name="action" value="delete">Deseja Realmente excluir esses dados? </button>
+    <a href="register.html">Cancelar</a>
+
+</form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="global.css">
+  <title>Formulário CRUD</title>
+</head>
+<body>
+<div>
+  <form action="app.php" method="POST">
+    <label>Adicionar Novo Jogador</label>
+      <div>
+        <div>
+          <label>Digite o nome do Jogador</label>
+          <input type="text" id="name" name="name">
+        </div>
+        <div>
+          <label>Digite o username do Jogador</label>
+          <input type="text" id="userName" name="userName">
+        </div>
+        <div>
+          <label>Digite o email do Jogador</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <div>
+          <label>Digite a senha do Jogador</label>
+          <input type="password" id="password" name="password">
+          <input type="hidden" id="dateRegister" name="dateRegister">
+        </div>
+      </div>
+    <button type="submit" name="action" value="create" >Cria Jogador </button>
+    <button type="submit" name="action" value="listAll" >Listar Jogadores </button>
+
+  </form>
+</div>
+</body>
+</html>
